@@ -12,6 +12,11 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        heading: ["Lora", "serif"], // For Headings
+        body: ["Inter", "sans-serif"], // For Body Text
+        accent: ["Merriweather", "serif"], // For Buttons & Accents
+      },
     },
   },
   plugins: [],

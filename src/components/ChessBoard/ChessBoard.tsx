@@ -8,7 +8,7 @@ const initialBoard = [
 
 const ChessBoard = () => {
   return (
-    <div className="grid grid-cols-8 w-[640px] h-[640px]">
+    <div className="grid grid-cols-8 w-[720px] h-[720px]">
       {initialBoard.flat().map((piece, i) => {
         const row = Math.floor(i / 8);
         const col = i % 8;
@@ -19,7 +19,7 @@ const ChessBoard = () => {
         return (
           <div
             key={i}
-            className={`w-20 h-20 flex items-center justify-center text-3xl font-bold ${
+            className={`w-24 h-24 flex items-center justify-center text-3xl font-bold ${
               isDark ? "bg-gray-800" : "bg-gray-300"
             }`}
           >
